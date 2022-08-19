@@ -1,0 +1,17 @@
+{
+  "scripts": {
+    "dev": "vitepress dev . --port 8888",
+    "build": "vitepress build .",
+    "serve": "vitepress serve ."
+  },
+  "devDependencies": {
+    "@rushstack/eslint-patch": "^1.1.4",
+    "@vue/eslint-config-prettier": "^7.0.0",
+    "@vue/eslint-config-typescript": "^11.0.0",
+    "eslint": "^8.22.0",
+    "eslint-plugin-vue": "^9.3.0",
+    "prettier": "^2.7.1",
+    "vitepress": "^1.0.0-alpha.8",
+    "vue": "^3.2.37"
+  }
+}
