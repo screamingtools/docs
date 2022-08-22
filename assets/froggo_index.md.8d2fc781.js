@@ -1,0 +1,10 @@
+import{_ as a,c as n,o as s,a as e}from"./app.06377cf9.js";const _=JSON.parse('{"title":"@screaming/froggo","description":"","frontmatter":{},"headers":[{"level":2,"title":"Introduction","slug":"introduction"},{"level":2,"title":"Installation","slug":"installation"}],"relativePath":"froggo/index.md","lastUpdated":1661187253000}'),o={name:"froggo/index.md"},t=e(`<h1 id="screaming-froggo" tabindex="-1">@screaming/froggo <a class="header-anchor" href="#screaming-froggo" aria-hidden="true">#</a></h1><h2 id="introduction" tabindex="-1">Introduction <a class="header-anchor" href="#introduction" aria-hidden="true">#</a></h2><p><strong>@screaming/froggo</strong> is a command-line tool for quickly bootstrapping new web projects.</p><p><a href="https://github.com/screamingtools/froggo" target="_blank" rel="noreferrer">View source code.</a></p><h2 id="installation" tabindex="-1">Installation <a class="header-anchor" href="#installation" aria-hidden="true">#</a></h2><p>Install <strong>globally</strong> with your favourite package manager:</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#676E95;"># yarn</span></span>
+<span class="line"><span style="color:#A6ACCD;">yarn global add @screaming/utils</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;"># pnpm</span></span>
+<span class="line"><span style="color:#A6ACCD;">pnpm add --global @screaming/utils</span></span>
+<span class="line"></span>
+<span class="line"><span style="color:#676E95;"># npm</span></span>
+<span class="line"><span style="color:#A6ACCD;">npm install --global @screaming/utils</span></span>
+<span class="line"></span></code></pre></div><p>Create a new project:</p><div class="language-sh"><button class="copy"></button><span class="lang">sh</span><pre><code><span class="line"><span style="color:#A6ACCD;">$ froggo new my-project</span></span>
+<span class="line"></span></code></pre></div>`,9),l=[t];function r(i,p,c,d,g,h){return s(),n("div",null,l)}const m=a(o,[["render",r]]);export{_ as __pageData,m as default};
