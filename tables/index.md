@@ -1,4 +1,4 @@
-# @screaming/share
+# @screaming/tables
 
 ## Introduction
 
