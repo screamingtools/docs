@@ -11,7 +11,7 @@ export default defineConfig({
     theme: 'material-palenight',
     lineNumbers: false
   },
-  outDir: './dist',
+  // outDir: './dist',
   title: 'Screaming Tools',
   titleTemplate: ' Screaming Tools',
 
