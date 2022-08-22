@@ -38,7 +38,8 @@ export default defineConfig({
           text: 'Templates',
           items: [
             { text: 'Tailwind', link: '/froggo/tailwind' },
-            { text: 'SASS', link: '/froggo/sass' }
+            { text: 'SASS', link: '/froggo/sass' },
+            { text: 'NPM Package', link: '/froggo/package' }
           ]
         }
       ],

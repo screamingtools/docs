@@ -29,5 +29,6 @@
 ├── README.md
 ├── tailwind.config.cjs
 ├── tsconfig.json
+├── tsconfig.node.json
 └── vite.config.ts
 ```

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**@screaming/froggo** is a command-line tool for quickly bootstrapping new web projects.
+**@screaming/froggo** is a command-line tool for quickly bootstrapping new web projects and npm packages.
 
 [View source code.](https://github.com/screamingtools/froggo)
 
@@ -12,17 +12,17 @@ Install **globally** with your favourite package manager:
 
 ```sh
 # yarn
-yarn global add @screaming/utils
+yarn global add @screaming/froggo
 
 # pnpm
-pnpm add --global @screaming/utils
+pnpm add --global @screaming/froggo
 
 # npm
-npm install --global @screaming/utils
+npm install --global @screaming/froggo
 ```
 
 Create a new project:
 
 ```sh
-$ froggo new my-project
+$ froggo my-project
 ```
