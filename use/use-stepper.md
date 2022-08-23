@@ -8,10 +8,10 @@
 import { useStepper } from '@screaming/use'
 
 // step `currentStep` between 10 and 50, in increments of 10
-const [currentStep, step] = useStepper({ min: 10, max: 50, step: 10 })
+const { value: currentStep, step } = useStepper({ min: 10, max: 50, step: 10 })
 
 // toggle `currentStep` between 10 and 50
-const [currentStep, step] = useStepper({ min: 10, max: 50 })
+const { value: currentStep, step } = useStepper({ min: 10, max: 50 })
 ```
 
 ## Behaviour
@@ -27,7 +27,7 @@ import { useStepper } from '@screaming/use'
 import data from '~/assets/data.json'
 
 const MIN = 10
-const [current, step] = useStepper({ min: MIN, max: data.length })
+const { value: current, step } = useStepper({ min: MIN, max: data.length })
 
 const buttonText = computed(() => (current.value === MIN ? 'Show more' : 'Show less'))
 </script>
@@ -55,11 +55,10 @@ interface UseStepperOptions {
  * @param options.min - The stepper's minimum value.
  * @param options.max - The stepper's maximum value.
  * @param options.step - The stepper's step size.
- * @returns Tuple of the current value and step function.
+ * @returns Object with the current value and step function.
  */
-export declare function useStepper({
-  min,
-  max,
-  step: stepSize = 0
-}: UseStepperOptions): [Ref<number>, () => void]
+export declare function useStepper({ min, max, step: stepSize = 0 }: UseStepperOptions): {
+  current: Ref<number>
+  step: () => void
+}
 ```

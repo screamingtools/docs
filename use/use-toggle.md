@@ -8,10 +8,10 @@
 import { useToggle } from '@screaming/use'
 
 // basic usage
-const [value, toggleValue] = useToggle(true)
+const { value, toggle: toggleValue } = useToggle(true)
 
 // runs a callback with updated `value`
-const [value, toggleValue] = useToggle(true, (newValue) => {
+const { value, toggle: toggleValue } = useToggle(true, (newValue) => {
   /* ... */
 })
 ```
@@ -26,7 +26,7 @@ For example:
 <script setup lang="ts">
 import { useToggle } from '@screaming/use'
 
-const [modalOpen, toggleModalOpen] = useToggle(false, (isOpen) => {
+const { value: modalOpen, toggle: toggleModalOpen } = useToggle(false, (isOpen) => {
   document.body.style.overflowY = isOpen ? 'hidden' : ''
 })
 </script>
@@ -38,10 +38,13 @@ const [modalOpen, toggleModalOpen] = useToggle(false, (isOpen) => {
 /**
  * @param init - The reactive value's initial value.
  * @param cb - The callback to run when the value changes.
- * @returns Tuple of the current value and toggle function.
+ * @returns Object with the current value and toggle function.
  */
 export declare function useToggle(
   init?: boolean,
   cb?: (b?: boolean) => void
-): [Ref<boolean>, () => void]
+): {
+  value: Ref<boolean>
+  toggle: () => void
+}
 ```
