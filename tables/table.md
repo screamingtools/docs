@@ -20,25 +20,25 @@ import { Table } from '@screaming/tables'
 <script setup lang="ts">
 import {
   Table,
-  defineClasses,
-  defineColumn,
-  defineConfig
+  createClasses,
+  createColumn,
+  createConfig
 } from '@screaming/tables'
 import data from '~/assets/data.json'
 
-const classes = defineClasses({ ... })
+const classes = createClasses({ ... })
 
-const config = defineConfig({ ... })
+const config = createConfig({ ... })
 
 const columns = [
-  defineColumn('...', { ... }),
-  defineColumn('...', { ... }),
-  defineColumn('...', { ... })
+  createColumn('...', { ... }),
+  createColumn('...', { ... }),
+  createColumn('...', { ... })
 ]
 </script>
 
 <template>
-  <Table :data="data" :columns="columns" :config="config" :classes="classes" />
+  <Table :data="data" :columns="columns" :config="config" :classes="classes" init-key="..." />
 </template>
 ```
 
@@ -49,6 +49,7 @@ const columns = [
 | `data`     | `array`           |               | The data to display in the table.           |
 | `columns`  | `array`           |               | The table's column definitions.             |
 | `config`   | `object`          |               | The table's configuration.                  |
+| `initKey`  | `string`          |               | The initial key to rank the data by.        |
 | `classes`  | `object`          | `{}`          | Class definitions for the table's elements. |
 | `headless` | `boolean`         | `false`       | Whether or not to display the `<thead>`.    |
 | `length`   | `number`          | `data.length` | How many rows to display in the table.      |

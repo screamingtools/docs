@@ -50,7 +50,7 @@ export default defineConfig({
         },
         {
           text: 'Component',
-          items: [{ text: '<ShareButton />', link: '/share/share-button.md' }]
+          items: [{ text: '<ShareLink />', link: '/share/share-link.md' }]
         }
       ],
       '/tables/': [
@@ -59,21 +59,18 @@ export default defineConfig({
           items: [{ text: 'Installation', link: '/tables/' }]
         },
         {
-          text: '<Table />',
+          text: 'Components',
           items: [
-            { text: 'Component', link: '/tables/table/component' },
-            { text: 'defineClasses', link: '/tables/table/define-classes' },
-            { text: 'defineColumn', link: '/tables/table/define-column' },
-            { text: 'defineConfig', link: '/tables/table/define-config' }
+            { text: '<Table />', link: '/tables/table' },
+            { text: '<MiniTable />', link: '/tables/mini-table' }
           ]
         },
         {
-          text: '<MiniTable />',
+          text: 'Helpers',
           items: [
-            { text: 'Component', link: '/tables/mini-table/component' },
-            { text: 'defineClasses', link: '/tables/mini-table/define-classes' },
-            { text: 'defineColumn', link: '/tables/mini-table/define-column' },
-            { text: 'defineConfig', link: '/tables/mini-table/define-config' }
+            { text: 'createClasses', link: '/tables/create-classes' },
+            { text: 'createColumn', link: '/tables/create-column' },
+            { text: 'createConfig', link: '/tables/create-config' }
           ]
         }
       ],

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-**@screaming/share** provides a single [Vue 3](https://vuejs.org/) component, `<ShareButton />`, which easily facilitates creating social share buttons.
+**@screaming/share** provides a single [Vue 3](https://vuejs.org/) component, `<ShareLink />`, which easily facilitates creating social share links.
 
 [View source code.](https://github.com/screamingtools/share)
 
@@ -31,25 +31,25 @@ Import as required:
 <!-- setup  -->
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { ShareButton } from '@screaming/share'
+import { ShareLink } from '@screaming/share'
 
 export default defineComponent({
-  components: { ShareButton }
+  components: { ShareLink }
 })
 </script>
 
 <template>
-  <ShareButton platform="...">...</ShareButton>
+  <ShareLink to="...">...</ShareLink>
 </template>
 ```
 
 ```vue
 <!-- script setup -->
 <script setup lang="ts">
-import { ShareButton } from '@screaming/share'
+import { ShareLink } from '@screaming/share'
 </script>
 
 <template>
-  <ShareButton platform="...">...</ShareButton>
+  <ShareLink to="...">...</ShareLink>
 </template>
 ```

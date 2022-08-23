@@ -1,24 +1,24 @@
-# defineClasses
+# createClasses
 
-> Intellisense helper for `<MiniTable>` classes.
+> Intellisense helper for `<Table>` and `<MiniTable>` classes.
 
 ## Usage
 
 ```vue
 <script setup lang="ts">
-import { MiniTable, defineClasses } from '@screaming/tables/mini'
+import { Table, createClasses } from '@screaming/tables'
 
-const classes = defineClasses({
-  table: '...',
+const classes = createClasses({
+  table: ...,
   head: { ... },
   body: { ... },
-  indicator: '...'
+  indicator: ...
 })
 </script>
 
 <template>
   <!-- other props omitted for brevity -->
-  <MiniTable :classes="classes" />
+  <Table :classes="classes" />
 </template>
 ```
 
@@ -48,5 +48,5 @@ interface Classes {
  * @param classes - The classes
  * @returns The classes
  */
-export declare function defineClasses(classes: Classes): Classes
+export declare function createClasses(classes: Classes): Classes
 ```

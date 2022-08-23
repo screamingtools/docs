@@ -1,24 +1,23 @@
-# defineConfig
+# createConfig
 
-> Defines a configuration object for a `<Table>`.
+> Creates a configuration object for a `<Table>` or `<MiniTable>`.
 
 ## Usage
 
 ```vue
 <script setup lang="ts">
-import { Table, defineConfig } from '@screaming/tables'
+import { Table, createConfig } from '@screaming/tables'
 
-const config = defineConfig({
-  backups: { DEFAULT: '...' },
-  initKey: '...',
-  tieRanks: true,
+const config = createConfig({
+  backups: { DEFAULT: ... },
+  tieRanks: ...,
   ignore: [...]
 })
 </script>
 
 <template>
   <!-- other props omitted for brevity -->
-  <Table :config="config" />
+  <MiniTable :config="config" />
 </template>
 ```
 
@@ -32,24 +31,21 @@ interface Backups {
 
 interface Config {
   backups: Backups
-  initKey: string
   tieRanks: boolean
   ignore: (string | number | boolean)[]
 }
 
-interface DefineConfigOptions {
+interface CreateConfigOptions {
   backups: Backups
-  initKey: string
   tieRanks?: boolean
   ignore?: (string | number | boolean)[]
 }
 
 /**
  * @param options - Function options.
- * @param options.initKey - The initial key to rank the data by.
  * @param options.backups - Mapping of keys to which keys they use to resolve tied data.
  * @param options.tieRanks - If ranks should be tied.
  * @param options.ignore - The values to ignore.
  */
-export declare function defineConfig(options: DefineConfigOptions): Config
+export declare function createConfig(options: CreateConfigOptions): Config
 ```

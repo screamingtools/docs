@@ -31,8 +31,7 @@ Import as required:
 <!-- setup  -->
 <script lang="ts">
 import { defineComponent } from 'vue'
-import { Table } from '@screaming/tables'
-import { MiniTable } from '@screaming/tables/mini'
+import { Table, MiniTable } from '@screaming/tables'
 
 export default defineComponent({
   components: { Table, MiniTable }
@@ -48,8 +47,7 @@ export default defineComponent({
 ```vue
 <!-- script setup -->
 <script setup lang="ts">
-import { Table } from '@screaming/tables'
-import { MiniTable } from '@screaming/tables/mini'
+import { Table, MiniTable } from '@screaming/tables'
 </script>
 
 <template>

@@ -28,13 +28,7 @@ npm install @screaming/utils
 Import as required:
 
 ```ts
-// ESM
 import { ... } from '@screaming/utils'
-```
-
-```ts
-// CommonJS
-const { ... } = require('@screaming/utils')
 ```
 
 ## Deprecated Utilities
@@ -42,11 +36,5 @@ const { ... } = require('@screaming/utils')
 Some deprecated functions are still available for backwards compatability purposes, and can be imported like so:
 
 ```ts
-// ESM
 import { ... } from '@screaming/utils/deprecated'
-```
-
-```ts
-// CommonJS
-const { ... } = require('@screaming/utils/deprecated')
 ```

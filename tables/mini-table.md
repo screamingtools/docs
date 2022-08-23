@@ -3,14 +3,14 @@
 > Rankable, sortable, and filterable table.
 
 :::tip
-`<MiniTable />`s are designed to be used in conjunction with dropdown menus, which should be connected to the `visible-key` prop. See the [Full Example](./component.md#full-example) for a demonstration.
+`<MiniTable />`s are designed to be used in conjunction with dropdown menus, which should be connected to the `visible-key` prop. See the [Full Example](./mini-table.md#full-example) for a demonstration.
 :::
 
 ## Usage
 
 ```vue
 <script setup lang="ts">
-import { MiniTable } from '@screaming/tables/mini'
+import { MiniTable } from '@screaming/tables'
 </script>
 
 <template>
@@ -25,20 +25,20 @@ import { MiniTable } from '@screaming/tables/mini'
 import { ref } from 'vue'
 import {
   MiniTable,
-  defineClasses,
-  defineColumn,
-  defineConfig
-} from '@screaming/tables/mini'
+  createClasses,
+  createColumn,
+  createConfig
+} from '@screaming/tables'
 import data from '~/assets/data.json'
 
-const classes = defineClasses({ ... })
+const classes = createClasses({ ... })
 
-const config = defineConfig({ ... })
+const config = createConfig({ ... })
 
 const columns = [
-  defineColumn('...', { ... }),
-  defineColumn('...', { ... }),
-  defineColumn('...', { ... })
+  createColumn('...', { ... }),
+  createColumn('...', { ... }),
+  createColumn('...', { ... })
 ]
 
 const dropdownItems = [ ... ]
