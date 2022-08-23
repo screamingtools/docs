@@ -36,6 +36,7 @@ export default defineConfig({
         },
         {
           text: 'Templates',
+          collapsible: true,
           items: [
             { text: 'Tailwind', link: '/froggo/tailwind' },
             { text: 'SASS', link: '/froggo/sass' },
@@ -50,6 +51,7 @@ export default defineConfig({
         },
         {
           text: 'Component',
+          collapsible: true,
           items: [{ text: '<ShareLink />', link: '/share/share-link.md' }]
         }
       ],
@@ -60,6 +62,7 @@ export default defineConfig({
         },
         {
           text: 'Components',
+          collapsible: true,
           items: [
             { text: '<Table />', link: '/tables/table' },
             { text: '<MiniTable />', link: '/tables/mini-table' }
@@ -67,6 +70,7 @@ export default defineConfig({
         },
         {
           text: 'Helpers',
+          collapsible: true,
           items: [
             { text: 'createClasses', link: '/tables/create-classes' },
             { text: 'createColumn', link: '/tables/create-column' },
