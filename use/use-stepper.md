@@ -55,6 +55,7 @@ interface UseStepperOptions {
  * @param options.min - The stepper's minimum value.
  * @param options.max - The stepper's maximum value.
  * @param options.step - The stepper's step size.
+ * @returns Tuple of the current value and step function.
  */
 export declare function useStepper({
   min,

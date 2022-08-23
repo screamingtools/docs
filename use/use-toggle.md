@@ -36,10 +36,9 @@ const [modalOpen, toggleModalOpen] = useToggle(false, (isOpen) => {
 
 ```ts
 /**
- * Toggles a reactive boolean value with optional callback.
- *
  * @param init - The reactive value's initial value.
  * @param cb - The callback to run when the value changes.
+ * @returns Tuple of the current value and toggle function.
  */
 export declare function useToggle(
   init?: boolean,
