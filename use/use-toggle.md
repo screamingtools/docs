@@ -30,6 +30,10 @@ const { value: modalOpen, toggle: toggleModalOpen } = useToggle(false, (isOpen) 
   document.body.style.overflowY = isOpen ? 'hidden' : ''
 })
 </script>
+
+<template>
+  <MethodologyModal v-show="modalOpen" @close="toggleModalOpen" />
+</template>
 ```
 
 ## Type Definitions

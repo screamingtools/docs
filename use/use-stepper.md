@@ -7,11 +7,11 @@
 ```ts
 import { useStepper } from '@screaming/use'
 
-// step `currentStep` between 10 and 50, in increments of 10
-const { value: currentStep, step } = useStepper({ min: 10, max: 50, step: 10 })
+// step `value` between 10 and 50, in increments of 10
+const { value, step } = useStepper({ min: 10, max: 50, step: 10 })
 
-// toggle `currentStep` between 10 and 50
-const { value: currentStep, step } = useStepper({ min: 10, max: 50 })
+// toggle `value` between 10 and 50
+const { value, step } = useStepper({ min: 10, max: 50 })
 ```
 
 ## Behaviour
@@ -23,19 +23,22 @@ For example:
 ```vue
 <script setup lang="ts">
 import { computed } from 'vue'
+import { Table, ... } from '@screaming/table'
 import { useStepper } from '@screaming/use'
 import data from '~/assets/data.json'
 
-const MIN = 10
-const { value: current, step } = useStepper({ min: MIN, max: data.length })
+/* table configuration omitted for brevity */
 
-const buttonText = computed(() => (current.value === MIN ? 'Show more' : 'Show less'))
+const MIN_LENGTH = 10
+const { value: tableLength, step } = useStepper({ min: MIN_LENGTH, max: data.length })
+
+const buttonText = computed(() => (tableLength.value === MIN_LENGTH ? 'Show more' : 'Show less'))
 </script>
 
 <template>
-  <!-- ... -->
+  <Table :data="..." :columns="..." :config="..." :classes="..." :length="tableLength" />
+
   <button @click="step">{{ buttonText }}</button>
-  <!-- ... -->
 </template>
 ```
 
