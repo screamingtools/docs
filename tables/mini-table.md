@@ -58,7 +58,7 @@ const visibleKey = ref(dropdownItems[0])
     :data="data"
     :columns="columns"
     :config="config"
-    :visible-key="visibleKey"
+    :visible-key="[visibleKey]"
     :classes="classes"
   />
 </template>
@@ -66,13 +66,13 @@ const visibleKey = ref(dropdownItems[0])
 
 ## Props
 
-| Name         | Type              | Default       | Description                                  |
-| ------------ | ----------------- | ------------- | -------------------------------------------- |
-| `data`       | `array`           |               | The data to display in the table.            |
-| `columns`    | `array`           |               | The table's column definitions.              |
-| `config`     | `object`          |               | The table's configuration.                   |
-| `visibleKey` | `string`          |               | The currently selected non-permanent column. |
-| `classes`    | `object`          | `{}`          | Class definitions for the table's elements.  |
-| `headless`   | `boolean`         | `false`       | Whether or not to display the `<thead>`.     |
-| `length`     | `number`          | `data.length` | How many rows to display in the table.       |
-| `filter`     | `[string,string]` | `[]`          | Key-value pairing for filtering table data.  |
+| Name          | Type              | Default       | Description                                     |
+| ------------- | ----------------- | ------------- | ----------------------------------------------- |
+| `data`        | `array`           |               | The data to display in the table.               |
+| `columns`     | `array`           |               | The table's column definitions.                 |
+| `config`      | `object`          |               | The table's configuration.                      |
+| `visibleKeys` | `string[]`        |               | The currently selected non-permanent column(s). |
+| `classes`     | `object`          | `{}`          | Class definitions for the table's elements.     |
+| `headless`    | `boolean`         | `false`       | Whether or not to display the `<thead>`.        |
+| `length`      | `number`          | `data.length` | How many rows to display in the table.          |
+| `filter`      | `[string,string]` | `[]`          | Key-value pairing for filtering table data.     |
