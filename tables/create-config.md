@@ -17,7 +17,7 @@ const config = createConfig({
 
 <template>
   <!-- other props omitted for brevity -->
-  <MiniTable :config="config" />
+  <Table :config="config" />
 </template>
 ```
 
