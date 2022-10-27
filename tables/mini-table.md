@@ -66,7 +66,7 @@ const visibleKeys = [ref(dropdownItems[0])]
 </template>
 ```
 
-### Multiple Temporary Columns
+## Multiple Temporary Columns
 
 The below example demonstrates an uncommon scenario whereby selecting a value in a dropdown changes multiple table columns at once.
 
