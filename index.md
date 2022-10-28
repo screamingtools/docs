@@ -3,8 +3,8 @@ layout: home
 title: Home
 
 hero:
-  name: Screaming Tools
-  text: Tools for Screaming Frog projects 🐸
+  name: SF Designdev Packages
+  text: NPM Packages for Screaming Frog projects 🐸
   actions:
     - theme: brand
       text: Froggo

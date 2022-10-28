@@ -4,7 +4,7 @@
 
 **@screaming/share** provides a single [Vue 3](https://vuejs.org/) component, `<ShareLink />`, which easily facilitates creating social share links.
 
-[View source code.](https://github.com/screamingtools/share)
+[View source code.](https://github.com/sf-designdev-packages/share)
 
 :::tip
 **@screaming/share** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.

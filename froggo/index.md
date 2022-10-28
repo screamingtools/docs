@@ -4,7 +4,7 @@
 
 **@screaming/froggo** is a command-line tool for quickly bootstrapping new web projects and npm packages.
 
-[View source code.](https://github.com/screamingtools/froggo)
+[View source code.](https://github.com/sf-designdev-packages/froggo)
 
 ## Installation
 

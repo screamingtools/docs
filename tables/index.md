@@ -4,7 +4,7 @@
 
 **@screaming/tables** provides two [Vue 3](https://vuejs.org/) components, `<Table />` and `<MiniTable />`, which facilitate creating tables with ranking, sorting, and filtering functionality.
 
-[View source code.](https://github.com/screamingtools/tables)
+[View source code.](https://github.com/sf-designdev-packages/tables)
 
 :::tip
 **@screaming/tables** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
@@ -28,7 +28,7 @@ npm install @screaming/tables
 Import as required:
 
 ```vue
-<!-- setup  -->
+<!-- defineComponent -->
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Table, MiniTable } from '@screaming/tables'

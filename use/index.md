@@ -4,7 +4,7 @@
 
 **@screaming/use** is a collection of bespoke [Vue 3](https://vuejs.org/) composables.
 
-[View source code.](https://github.com/screamingtools/use)
+[View source code.](https://github.com/sf-designdev-packages/use)
 
 :::tip
 **@screaming/use** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.

@@ -3,7 +3,7 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   appearance: true,
   // base: '',
-  description: 'Collection of TypeScript and Vue tools for Screaming Frog projects 🐸',
+  description: 'NPM Packages for Screaming Frog projects 🐸',
   head: [],
   lang: 'en-US',
   lastUpdated: true,
@@ -12,13 +12,13 @@ export default defineConfig({
     lineNumbers: false
   },
   // outDir: './dist',
-  title: 'Screaming Tools',
-  titleTemplate: ' Screaming Tools',
+  title: 'SF Designdev Packages',
+  titleTemplate: ' SF Designdev Packages',
 
   themeConfig: {
     logo: '/favicon.ico',
 
-    socialLinks: [{ icon: 'github', link: 'https://github.com/screamingtools' }],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/sf-designdev-packages' }],
 
     nav: [
       { text: 'Froggo', link: '/froggo/', activeMatch: '/froggo/*' },
@@ -72,9 +72,22 @@ export default defineConfig({
           text: 'Helpers',
           collapsible: true,
           items: [
-            { text: 'createClasses', link: '/tables/create-classes' },
-            { text: 'createColumn', link: '/tables/create-column' },
-            { text: 'createConfig', link: '/tables/create-config' }
+            { text: 'createClasses', link: '/tables/helpers/create-classes' },
+            { text: 'createColumn', link: '/tables/helpers/create-column' },
+            { text: 'createConfig', link: '/tables/helpers/create-config' }
+          ]
+        },
+        {
+          text: 'Examples',
+          collapsible: true,
+          items: [
+            { text: 'Filtering Data', link: '/tables/examples/filtering-data' },
+            {
+              text: 'Linking Dropdown to Table',
+              link: '/tables/examples/linking-dropdown-to-table'
+            },
+            { text: 'Replacing Table Data', link: '/tables/examples/replacing-table-data' },
+            { text: 'Using Table DOM Nodes', link: '/tables/examples/using-table-dom-nodes' }
           ]
         }
       ],
