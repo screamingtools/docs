@@ -29,17 +29,17 @@ import { h as _h, type VNode } from 'vue'
 
 interface Column {
   key: string
-  title: string
   width: number
   sortOrder: 'asc' | 'desc'
   permanent?: boolean
   sortable: boolean
   rankable: boolean
+  createTitle: (h: typeof _h) => VNode
   format: (value: any, h: typeof _h) => VNode | string
 }
 
 interface CreateColumnOptions {
-  title: string
+  title?: string | ((h?: typeof _h) => VNode)
   width?: number
   sortOrder?: 'asc' | 'desc'
   permanent?: boolean
@@ -59,5 +59,5 @@ interface CreateColumnOptions {
  * @param options.rankable - If the column can be ranked (requires options.sortable: true).
  * @param options.format - Formatting function for the column's cell values.
  */
-export declare function createColumn(key: string, options: CreateColumnOptions): Column
+export declare function createColumn(key: string, options?: CreateColumnOptions): Column
 ```

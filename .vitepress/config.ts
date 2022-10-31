@@ -12,8 +12,8 @@ export default defineConfig({
     lineNumbers: false
   },
   // outDir: './dist',
-  title: 'SF Designdev Packages',
-  titleTemplate: ' SF Designdev Packages',
+  title: 'SF DesignDev Packages',
+  titleTemplate: ' SF DesignDev Packages',
 
   themeConfig: {
     logo: '/favicon.ico',

@@ -3,7 +3,7 @@ layout: home
 title: Home
 
 hero:
-  name: SF Designdev Packages
+  name: SF DesignDev Packages
   text: NPM Packages for Screaming Frog projects 🐸
   actions:
     - theme: brand
