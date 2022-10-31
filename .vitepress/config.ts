@@ -32,7 +32,7 @@ export default defineConfig({
       '/froggo/': [
         {
           text: '@screaming/froggo',
-          items: [{ text: 'Installation', link: '/froggo/' }]
+          items: [{ text: 'Getting Started', link: '/froggo/' }]
         },
         {
           text: 'Templates',
@@ -47,7 +47,7 @@ export default defineConfig({
       '/share/': [
         {
           text: '@screaming/share',
-          items: [{ text: 'Installation', link: '/share/' }]
+          items: [{ text: 'Getting Started', link: '/share/' }]
         },
         {
           text: 'Component',
@@ -58,7 +58,7 @@ export default defineConfig({
       '/tables/': [
         {
           text: '@screaming/tables',
-          items: [{ text: 'Installation', link: '/tables/' }]
+          items: [{ text: 'Getting Started', link: '/tables/' }]
         },
         {
           text: 'Components',
@@ -94,7 +94,7 @@ export default defineConfig({
       '/use/': [
         {
           text: '@screaming/use',
-          items: [{ text: 'Installation', link: '/use/' }]
+          items: [{ text: 'Getting Started', link: '/use/' }]
         },
         {
           text: 'Composables',
@@ -108,7 +108,7 @@ export default defineConfig({
       '/utils/': [
         {
           text: '@screaming/utils',
-          items: [{ text: 'Installation', link: '/utils/' }]
+          items: [{ text: 'Getting Started', link: '/utils/' }]
         },
         {
           text: 'Array',
