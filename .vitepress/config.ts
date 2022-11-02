@@ -70,7 +70,7 @@ function createShareSidebar() {
     {
       text: 'Component',
       collapsible: true,
-      items: [{ text: '<ShareLink />', link: '/share/share-link.md' }]
+      items: [{ text: '&lt;ShareLink />', link: '/share/share-link.md' }]
     }
   ]
 }
@@ -85,9 +85,14 @@ function createTablesSidebar() {
       text: 'Components',
       collapsible: true,
       items: [
-        { text: '<Table />', link: '/tables/table' },
-        { text: '<MiniTable />', link: '/tables/mini-table' }
+        { text: '&lt;Table />', link: '/tables/components/table' },
+        { text: '&lt;MiniTable />', link: '/tables/components/mini-table' }
       ]
+    },
+    {
+      text: 'Events',
+      collapsible: true,
+      items: [{ text: '@row-click', link: '/tables/events/row-click' }]
     },
     {
       text: 'Helpers',

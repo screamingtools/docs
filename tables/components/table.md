@@ -14,16 +14,11 @@ import { Table } from '@screaming/tables'
 </template>
 ```
 
-## Full Example
+## Example
 
 ```vue
 <script setup lang="ts">
-import {
-  Table,
-  createClasses,
-  createColumn,
-  createConfig
-} from '@screaming/tables'
+import { Table, createClasses, createColumn, createConfig } from '@screaming/tables'
 import data from '~/assets/data.json'
 
 const classes = createClasses({ ... })
@@ -51,6 +46,6 @@ const columns = [
 | `config`   | `object`          |               | The table's configuration.                  |
 | `initKey`  | `string`          |               | The initial key to rank the data by.        |
 | `classes`  | `object`          | `{}`          | Class definitions for the table's elements. |
-| `headless` | `boolean`         | `false`       | Whether or not to display the `<thead>`.    |
+| `headless` | `boolean`         | `false`       | Whether or not to render the `<thead>`.     |
 | `length`   | `number`          | `data.length` | How many rows to display in the table.      |
 | `filter`   | `[string,string]` | `[]`          | Key-value pairing for filtering table data. |

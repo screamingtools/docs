@@ -3,9 +3,7 @@
 > Rankable, sortable, and filterable table.
 
 :::tip
-`<MiniTable />`s are designed to be used in conjunction with dropdown menus, which should be connected to the `visible-keys` prop.
-
-If you require multiple columns to be switched out at a time, please see the [multiple temporary columns](./mini-table.md#multiple-temporary-columns) below.
+`<MiniTable />`s are designed to be used in conjunction with dropdown menus, which should be connected to the `visible-keys` prop. Please refer to [Linking Dropdown to Table](../examples/linking-dropdown-to-table.md) for more information.
 :::
 
 ## Usage
@@ -20,17 +18,12 @@ import { MiniTable } from '@screaming/tables'
 </template>
 ```
 
-## Full Example
+## Example
 
 ```vue
 <script setup lang="ts">
 import { ref } from 'vue'
-import {
-  MiniTable,
-  createClasses,
-  createColumn,
-  createConfig
-} from '@screaming/tables'
+import { MiniTable, createClasses, createColumn, createConfig } from '@screaming/tables'
 import data from '~/assets/data.json'
 
 const classes = createClasses({ ... })
@@ -66,62 +59,6 @@ const visibleKeys = [ref(dropdownItems[0])]
 </template>
 ```
 
-## Multiple Temporary Columns
-
-The below example demonstrates an uncommon scenario whereby selecting a value in a dropdown changes multiple table columns at once.
-
-```vue
-<script setup lang="ts">
-import { computed, ref } from 'vue'
-import {
-  MiniTable,
-  createClasses,
-  createColumn,
-  createConfig
-} from '@screaming/tables'
-import data from '~/assets/data.json'
-
-const classes = createClasses({ ... })
-
-const config = createConfig({ ... })
-
-const columns = [
-  createColumn('...', { ... }),
-  createColumn('...', { ... }),
-  createColumn('...', { ... })
-]
-
-const dropdownItems = ['good', 'bad']
-const currentDropdownItem = ref(dropdownItems[0])
-
-const visibleKeys = computed(() => {
-  if (currentDropdownItem.value === 'good') {
-    return ['good_scores_2021', 'good_scores_2022']
-  }
-
-  return ['bad_scores_2021', 'bad_scores_2022']
-})
-</script>
-
-<template>
-  <!-- dropdown menu -->
-  <select v-model="currentDropdownItem">
-    <option v-for="item in dropdownItems" :value="item">
-      {{ item }}
-    </option>
-  </select>
-
-  <!-- table -->
-  <MiniTable
-    :data="data"
-    :columns="columns"
-    :config="config"
-    :visible-keys="visibleKeys"
-    :classes="classes"
-  />
-</template>
-```
-
 ## Props
 
 | Name          | Type              | Default       | Description                                     |
@@ -131,6 +68,6 @@ const visibleKeys = computed(() => {
 | `config`      | `object`          |               | The table's configuration.                      |
 | `visibleKeys` | `string[]`        |               | The currently selected non-permanent column(s). |
 | `classes`     | `object`          | `{}`          | Class definitions for the table's elements.     |
-| `headless`    | `boolean`         | `false`       | Whether or not to display the `<thead>`.        |
+| `headless`    | `boolean`         | `false`       | Whether or not to render the `<thead>`.         |
 | `length`      | `number`          | `data.length` | How many rows to display in the table.          |
 | `filter`      | `[string,string]` | `[]`          | Key-value pairing for filtering table data.     |
