@@ -53,8 +53,9 @@ function createFroggoSidebar() {
       text: 'Templates',
       collapsible: true,
       items: [
-        { text: 'Tailwind', link: '/froggo/tailwind' },
-        { text: 'SASS', link: '/froggo/sass' },
+        { text: 'Vue + SASS (Vite)', link: '/froggo/sass' },
+        { text: 'Vue + Tailwind (Vite)', link: '/froggo/tailwind' },
+        { text: 'Vanilla + SASS (Webpack)', link: '/froggo/vanilla' },
         { text: 'NPM Package', link: '/froggo/package' }
       ]
     }
