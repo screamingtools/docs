@@ -29,15 +29,30 @@ project
 
 ## Key Items
 
-:::tip
-Despite being initialised for TypeScript, this project allows for 100% JavaScript usage as well. Simply change `src/index.ts` to `src/index.js`.
-:::
-
 1. Entry point to the application.
 
 2. Configuration file for [TypeScript](https://www.typescriptlang.org/) used in `src/` (`.ts` or `.d.ts` files).
 
-3. Configuration file for [tsup](https://tsup.egoist.dev/). tsup bundles all of the TypeScript/JavaScript files into a publishable format.
+3. Configuration file for [tsup](https://tsup.egoist.dev/) (a tool which bundles all of the TypeScript/JavaScript files into a publishable format).
+
+:::tip
+NPM Packages may be created using JavaScript instead of TypeScript. To enable this, simply change `src/index.ts` to `src/index.js`, and modify the entry point in `tsup.config.ts` as shown below:
+
+```ts
+import { defineConfig } from 'tsup'
+
+export default defineConfig({
+  entry: { index: 'src/index.ts' }, // [!code --]
+  entry: { index: 'src/index.js' }, // [!code ++]
+  outDir: 'dist',
+  format: ['cjs', 'esm'],
+  dts: true,
+  clean: true,
+  minify: true
+})
+```
+
+:::
 
 ## Helpful Docs
 
