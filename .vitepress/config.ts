@@ -9,7 +9,7 @@ export default defineConfig({
   lastUpdated: true,
   markdown: {
     theme: 'material-palenight',
-    lineNumbers: false
+    lineNumbers: true
   },
   // outDir: './dist',
   title: 'SF DesignDev Packages',
@@ -56,7 +56,7 @@ function createFroggoSidebar() {
         { text: 'Vue + SASS (Vite)', link: '/froggo/sass' },
         { text: 'Vue + Tailwind (Vite)', link: '/froggo/tailwind' },
         { text: 'Vanilla + SASS (Webpack)', link: '/froggo/vanilla' },
-        { text: 'NPM Package', link: '/froggo/package' }
+        { text: 'NPM Package', link: '/froggo/npm-package' }
       ]
     }
   ]
@@ -110,11 +110,10 @@ function createTablesSidebar() {
       collapsible: true,
       items: [
         { text: 'Filtering Data', link: '/tables/examples/filtering-data' },
-        {
-          text: 'Linking Dropdown to Table',
-          link: '/tables/examples/linking-dropdown-to-table'
-        },
+        { text: 'Formatting Cells', link: '/tables/examples/formatting-cells' },
+        { text: 'Linking Dropdown to Table', link: '/tables/examples/linking-dropdown-to-table' },
         { text: 'Replacing Table Data', link: '/tables/examples/replacing-table-data' },
+        { text: 'Toggling Length', link: '/tables/examples/toggling-length' },
         { text: 'Using Table DOM Nodes', link: '/tables/examples/using-table-dom-nodes' }
       ]
     }
@@ -131,6 +130,7 @@ function createUseSidebar() {
       text: 'Composables',
       collapsible: true,
       items: [
+        { text: 'useBreakpointObserver', link: '/use/use-breakpoint-observer' },
         { text: 'useStepper', link: '/use/use-stepper' },
         { text: 'useToggle', link: '/use/use-toggle' }
       ]
