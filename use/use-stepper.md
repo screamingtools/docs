@@ -52,8 +52,6 @@ interface UseStepperOptions {
 }
 
 /**
- * Steps between two numbers via optional interval.
- *
  * @param options - Function options.
  * @param options.min - The stepper's minimum value.
  * @param options.max - The stepper's maximum value.
