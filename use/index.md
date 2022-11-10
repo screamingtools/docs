@@ -6,15 +6,15 @@
 
 [View source code.](https://github.com/sf-designdev-packages/use)
 
-:::tip
-**@screaming/use** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
-:::
-
 :::warning
 **@screaming/use**'s composables must be used inside a component's [`setup`](https://vuejs.org/api/composition-api-setup.html) function, or inside components defined using [`<script setup>`](https://vuejs.org/api/sfc-script-setup.html#script-setup).
 :::
 
 ## Installation
+
+:::tip
+**@screaming/use** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
+:::
 
 Install with your favourite package manager:
 
@@ -32,7 +32,16 @@ npm install @screaming/use
 Import as required:
 
 ```vue
-<!-- setup function -->
+<!-- script setup (recommended) -->
+<script setup lang="ts">
+import { ... } from '@screaming/use'
+
+// ...
+</script>
+```
+
+```vue
+<!-- defineComponent -->
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { ... } from '@screaming/use'
@@ -42,14 +51,5 @@ export default defineComponent({
     // ...
   }
 })
-</script>
-```
-
-```vue
-<!-- script setup -->
-<script setup lang="ts">
-import { ... } from '@screaming/use'
-
-// ...
 </script>
 ```

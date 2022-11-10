@@ -6,11 +6,11 @@
 
 [View source code.](https://github.com/sf-designdev-packages/tables)
 
+## Installation
+
 :::tip
 **@screaming/tables** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
 :::
-
-## Installation
 
 Install with your favourite package manager:
 
@@ -28,14 +28,9 @@ npm install @screaming/tables
 Import as required:
 
 ```vue
-<!-- defineComponent -->
-<script lang="ts">
-import { defineComponent } from 'vue'
+<!-- script setup (recommended) -->
+<script setup lang="ts">
 import { Table, MiniTable } from '@screaming/tables'
-
-export default defineComponent({
-  components: { Table, MiniTable }
-})
 </script>
 
 <template>
@@ -45,9 +40,14 @@ export default defineComponent({
 ```
 
 ```vue
-<!-- script setup -->
-<script setup lang="ts">
+<!-- defineComponent -->
+<script lang="ts">
+import { defineComponent } from 'vue'
 import { Table, MiniTable } from '@screaming/tables'
+
+export default defineComponent({
+  components: { Table, MiniTable }
+})
 </script>
 
 <template>

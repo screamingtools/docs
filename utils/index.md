@@ -6,11 +6,11 @@
 
 [View source code.](https://github.com/sf-designdev-packages/utils)
 
+## Installation
+
 :::tip
 **@screaming/utils** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
 :::
-
-## Installation
 
 Install with your favourite package manager:
 
