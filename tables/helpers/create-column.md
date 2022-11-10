@@ -9,8 +9,7 @@
 import { Table, createColumn } from '@screaming/tables'
 
 const columns = [
-  createColumn('key', { ... }),
-  createColumn('key', { ... }),
+  createColumn('key'),
   createColumn('key', { ... }),
   ...
 ]
@@ -26,6 +25,7 @@ const columns = [
 
 ```ts
 import { h as _h, type VNode } from 'vue'
+import { type Obj } from '@screaming/utils'
 
 interface Column {
   key: string
@@ -35,7 +35,7 @@ interface Column {
   sortable: boolean
   rankable: boolean
   createTitle: (h: typeof _h) => VNode
-  format: (value: any, h: typeof _h) => VNode | string
+  format: ({ value, h, row }: { value: any; h: typeof _h; row: Obj }) => VNode | string
 }
 
 interface CreateColumnOptions {
@@ -45,7 +45,7 @@ interface CreateColumnOptions {
   permanent?: boolean
   sortable?: boolean
   rankable?: boolean
-  format?: (value: any, h?: typeof _h) => VNode | string
+  format?: ({ value, h, row }: { value?: any; h?: typeof _h; row?: Obj }) => VNode | string
 }
 
 /**
