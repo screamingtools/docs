@@ -4,12 +4,12 @@
 
 The following scripts are available in this project's `package.json`:
 
-- `dev`: Starts the development server on `http://localhost:8888/`.
+- `dev`: Starts the development server on `http://localhost:8888`.
 - `start`: Alias for `dev`.
 - `build`: Builds the project for production.
 - `build:inline`: Builds the project for production and prepares it to be inlined.
 - `build:iframe`: Builds the project for production and prepares it to be embedded via an `<iframe>`.
-- `preview`: Serves the `dist/` folder on `http://localhost:9999/`.
+- `preview`: Serves the `dist/` folder on `http://localhost:9999`.
 
 ## Project Structure
 

@@ -4,7 +4,7 @@
 
 The following scripts are available in this project's `package.json`:
 
-- `dev`: Starts the development server on `http://localhost:8888/`.
+- `dev`: Starts the development server on `http://localhost:8888`.
 - `start`: Alias for `dev`.
 - `build`: Builds the project for production.
 - `build:inline`: Builds the project for production and prepares it to be inlined.
@@ -33,12 +33,6 @@ The following scripts are available in this project's `package.json`:
 ```
 
 ## Key Items
-
-- `.sf-stuff/`: Build scripts and global variables. You shouldn't need to touch this.
-- `src/public/`: Files placed in here will be served at `website.com/file`.
-- `.babelrc`: Used for configuring Webpack's [babel-loader](https://webpack.js.org/loaders/babel-loader/).
-- `postcss.config.cjs`: Used for configuring [PostCSS](https://postcss.org/).
-- `webpack.config.cjs`: Used for configuring the [Webpack]() bundler.
 
 1. Contains build scripts and global variables - _**you shouldn't need to touch these files**_.
 

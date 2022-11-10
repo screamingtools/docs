@@ -4,12 +4,12 @@
 
 The following scripts are available in this project's `package.json`:
 
-- `dev`: Starts the development server on `http://localhost:8888/`.
+- `dev`: Starts the development server on `http://localhost:8888`.
 - `start`: Alias for `dev`.
 - `build`: Builds the project for production.
 - `build:inline`: Builds the project for production and prepares it to be inlined.
 - `build:iframe`: Builds the project for production and prepares it to be embedded via an `<iframe>`.
-- `preview`: Serves the `dist/` folder on `http://localhost:9999/`.
+- `preview`: Serves the `dist/` folder on `http://localhost:9999`.
 
 ## Project Structure
 
@@ -72,6 +72,8 @@ project
 
 :::warning
 The options in Tailwind configuration files can vary as new versions are released. Be sure to update this suggested configuration should any such changes occur.
+
+The config below is valid for `tailwindcss` version `^3.2.x`.
 :::
 
 ```js
