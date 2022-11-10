@@ -1,6 +1,6 @@
 # Using Table DOM Nodes
 
-It can be helpful to access the inner elements of the `<Table />` and `<MiniTable />` components (e.g. accessing the height of the `<thead>`). However, as these components act as a sort of blackbox around their internal HTML elements, we need to use a ref.
+It can be helpful to access the inner elements of the `<Table />` and `<MiniTable />` components (e.g. accessing the height of the `<thead>`). However, as these components act as a sort of blackbox around their internal HTML elements, we need to use the `ref` key to access them.
 
 :::tip
 You can learn more about using the `ref` key on child components [here](https://vuejs.org/guide/essentials/template-refs.html#ref-on-component).
@@ -24,6 +24,8 @@ const tableElements = ref(null)
 
 onMounted(() => {
   // the <thead> DOM node
+  // NOTE: you must use `.value` to access the contents of tableElements as
+  //       it is a ref
   const tableHead = tableElements.value.head
 })
 </script>
