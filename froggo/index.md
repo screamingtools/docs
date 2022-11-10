@@ -24,5 +24,5 @@ npm install --global @screaming/froggo
 Create a new project:
 
 ```sh
-$ froggo my-project
+froggo my-project
 ```
