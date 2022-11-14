@@ -79,10 +79,13 @@ The config below is valid for `tailwindcss` version `^3.2.x`.
 ```js
 /** @type { import('tailwindcss').Config } */
 const defaultTheme = require('tailwindcss/defaultTheme')
+const _GLOBAL_VARS = require('./.sf-stuff/global-variables.json')
+
+const ROOT_CONTAINER_ID = _GLOBAL_VARS.ROOT_CONTAINER_ID
 
 module.exports = {
   content: ['./src/**/*.{html,js,ts,vue}'],
-  // important: '#app',
+  important: `#${ROOT_CONTAINER_ID}`,
   darkMode: 'media', // or 'class'
   theme: {
     container: {
