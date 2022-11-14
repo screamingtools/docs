@@ -13,7 +13,7 @@ The following scripts are available in this project's `package.json`:
 ## Project Structure
 
 ```
-.
+project
 ├─ .sf-stuff/ (1)
 ├─ src/
 │  ├─ assets/
