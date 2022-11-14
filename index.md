@@ -6,21 +6,29 @@ hero:
   name: SF DesignDev Packages
   text: NPM Packages for Screaming Frog projects 🐸
   actions:
-    - theme: brand
-      text: Froggo
+    - text: Froggo
       link: /froggo/
-    - theme: alt
-      text: Share
+      theme: brand
+
+    - text: Share
       link: /share/
-    - theme: brand
-      text: Tables
+      theme: alt
+
+    - text: Tables
       link: /tables/
-    - theme: alt
-      text: Use
+      theme: brand
+
+    - text: Twitter
+      link: /twitter/
+      theme: alt
+
+    - text: Use
       link: /use/
-    - theme: brand
-      text: Utils
+      theme: brand
+
+    - text: Utils
       link: /utils/
+      theme: alt
 
 features:
   - icon: ✍️

@@ -28,6 +28,7 @@ function createNav() {
     { text: 'Froggo', link: '/froggo/', activeMatch: '/froggo/*' },
     { text: 'Share', link: '/share/', activeMatch: '/share/*' },
     { text: 'Tables', link: '/tables/', activeMatch: '/tables/*' },
+    { text: 'Twitter', link: '/twitter/', activeMatch: '/twitter/*' },
     { text: 'Use', link: '/use/', activeMatch: '/use/*' },
     { text: 'Utils', link: '/utils/', activeMatch: '/utils/*' }
   ]
@@ -38,6 +39,7 @@ function createSidebar() {
     '/froggo/': createFroggoSidebar(),
     '/share/': createShareSidebar(),
     '/tables/': createTablesSidebar(),
+    '/twitter/': createTwitterSidebar(),
     '/use/': createUseSidebar(),
     '/utils/': createUtilsSidebar()
   }
@@ -115,6 +117,18 @@ function createTablesSidebar() {
         { text: 'Replacing Table Data', link: '/tables/examples/replacing-table-data' },
         { text: 'Toggling Length', link: '/tables/examples/toggling-length' },
         { text: 'Using Table DOM Nodes', link: '/tables/examples/using-table-dom-nodes' }
+      ]
+    }
+  ]
+}
+
+function createTwitterSidebar() {
+  return [
+    {
+      text: '@screaming/twitter',
+      items: [
+        { text: 'Getting Started', link: '/twitter/' },
+        { text: 'Input File Structure', link: '/twitter/input-file-structure' }
       ]
     }
   ]
