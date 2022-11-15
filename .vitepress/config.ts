@@ -126,9 +126,25 @@ function createTwitterSidebar() {
   return [
     {
       text: '@screaming/twitter',
+      items: [{ text: 'Getting Started', link: '/twitter/' }]
+    },
+    {
+      text: 'Usage',
+      collapsible: true,
+      items: [{ text: 'Input File Structure', link: '/twitter/usage/input-file-structure' }]
+    },
+    {
+      text: 'Twitter Docs',
+      collapsible: true,
       items: [
-        { text: 'Getting Started', link: '/twitter/' },
-        { text: 'Input File Structure', link: '/twitter/input-file-structure' }
+        {
+          text: 'Building a Query',
+          link: 'https://developer.twitter.com/en/docs/twitter-api/tweets/search/integrate/build-a-query'
+        },
+        {
+          text: 'Searching Tweets',
+          link: 'https://developer.twitter.com/en/docs/twitter-api/tweets/search/api-reference/get-tweets-search-recent'
+        }
       ]
     }
   ]
