@@ -95,7 +95,10 @@ function createTablesSidebar() {
     {
       text: 'Events',
       collapsible: true,
-      items: [{ text: '@row-click', link: '/tables/events/row-click' }]
+      items: [
+        { text: '@header-click', link: '/tables/events/header-click' },
+        { text: '@row-click', link: '/tables/events/row-click' }
+      ]
     },
     {
       text: 'Helpers',
