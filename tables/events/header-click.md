@@ -8,7 +8,7 @@ The `@header-click` event is triggered whenever a user clicks on a `<th>` inside
 The example below uses the `$event` keyword, provided by Vue. You can learn more about it [here](https://vuejs.org/guide/essentials/event-handling.html#accessing-event-argument-in-inline-handlers).
 :::
 
-```vue{15,25}
+```vue{15-17,27}
 <script setup lang="ts">
 import { Table, createClasses, createColumn, createConfig } from '@screaming/tables'
 import data from '~/assets/data.json'
