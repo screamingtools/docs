@@ -74,6 +74,11 @@ function createShareSidebar() {
       text: 'Component',
       collapsible: true,
       items: [{ text: '&lt;ShareLink />', link: '/share/share-link.md' }]
+    },
+    {
+      text: 'Examples',
+      collapsible: true,
+      items: [{ text: 'Example Output', link: '/share/examples/example-output.md' }]
     }
   ]
 }
