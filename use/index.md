@@ -30,7 +30,6 @@ npm install @screaming/use
 ```
 
 Import as required:
-
 ```vue
 <!-- script setup (recommended) -->
 <script setup lang="ts">
@@ -41,7 +40,7 @@ import { ... } from '@screaming/use'
 ```
 
 ```vue
-<!-- defineComponent -->
+<!-- setup function -->
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { ... } from '@screaming/use'

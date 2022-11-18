@@ -6,6 +6,7 @@
 
 [View source code.](https://github.com/sf-designdev-packages/tables)
 
+
 ## Installation
 
 :::tip
@@ -40,7 +41,7 @@ import { Table, MiniTable } from '@screaming/tables'
 ```
 
 ```vue
-<!-- defineComponent -->
+<!-- using defineComponent (old school vue)  -->
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { Table, MiniTable } from '@screaming/tables'

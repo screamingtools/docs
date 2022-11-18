@@ -1,6 +1,6 @@
 # &lt;MiniTable /&gt;
 
-> Rankable, sortable, and filterable table.
+> Rankable, sortable, and filterable table that display just a handful of columns at a time to fit on mobile devices.
 
 :::tip
 `<MiniTable />`s are designed to be used in conjunction with dropdown menus, which should be connected to the `visible-keys` prop. Please refer to [Linking Dropdown to Table](../examples/linking-dropdown-to-table.md) for more information.

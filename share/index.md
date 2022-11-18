@@ -6,11 +6,13 @@
 
 [View source code.](https://github.com/sf-designdev-packages/share)
 
+
 ## Installation
 
 :::tip
 **@screaming/share** comes pre-installed in all [@screaming/froggo](../froggo/index.md) projects.
 :::
+
 Install with your favourite package manager:
 
 ```sh
@@ -38,7 +40,7 @@ import { ShareLink } from '@screaming/share'
 ```
 
 ```vue
-<!-- defineComponent  -->
+<!-- using defineComponent (old school vue)  -->
 <script lang="ts">
 import { defineComponent } from 'vue'
 import { ShareLink } from '@screaming/share'
