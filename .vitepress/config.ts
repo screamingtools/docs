@@ -208,7 +208,8 @@ function createUtilsSidebar() {
         { text: 'createElement', link: '/utils/dom/create-element' },
         { text: 'generateShareLinks', link: '/utils/dom/generate-share-links' },
         { text: 'makeBackToTop', link: '/utils/dom/make-back-to-top' },
-        { text: 'scroll', link: '/utils/dom/scroll' }
+        { text: 'scroll', link: '/utils/dom/scroll' },
+        { text: 'ZoomPanner', link: '/utils/dom/zoom-panner' }
       ]
     },
     {

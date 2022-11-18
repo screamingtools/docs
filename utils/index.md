@@ -33,7 +33,23 @@ import { ... } from '@screaming/utils'
 
 ## Deprecated Utilities
 
-Some deprecated functions are still available and can be imported like so:
+Some deprecated functions/classes are still available in **@screaming/utils**:
+
+- `Accordion.ts`
+- `AnimationController.ts`
+- `appendChildren.ts`
+- `BrowserChecker.ts`
+- `createAccordions.ts`
+- `delegateEvents.ts`
+- `ElementCache.ts`
+- `El.ts`
+- `findObjects.ts`
+- `index.ts`
+- `moveElAtBreakpoint.ts`
+- `removeChildren.ts`
+- `updateAttribute.ts`
+
+These can be imported like so:
 
 ```ts
 import { ... } from '@screaming/utils/deprecated'
