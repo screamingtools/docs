@@ -170,7 +170,8 @@ function createUseSidebar() {
       items: [
         { text: 'useBreakpointObserver', link: '/use/use-breakpoint-observer' },
         { text: 'useStepper', link: '/use/use-stepper' },
-        { text: 'useToggle', link: '/use/use-toggle' }
+        { text: 'useToggle', link: '/use/use-toggle' },
+        { text: 'useForceRerender', link: '/use/use-force-rerender' }
       ]
     }
   ]
