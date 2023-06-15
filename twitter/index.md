@@ -27,10 +27,8 @@ pnpm add --global @screaming/twitter-scraper
 npm install --global @screaming/twitter-scraper
 ```
 
-## initiation
+## Initiation
 
 ```sh
 twitter-scraper input_file.json
 ```
-
-## 2

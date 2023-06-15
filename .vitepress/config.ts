@@ -139,7 +139,10 @@ function createTwitterSidebar() {
     {
       text: 'Usage',
       collapsible: true,
-      items: [{ text: 'Input File Structure', link: '/twitter/usage/input-file-structure' }]
+      items: [
+        { text: 'Quotas & Limitations', link: '/twitter/usage/quotas-and-limitations' },
+        { text: 'Input File Structure', link: '/twitter/usage/input-file-structure' }
+      ]
     },
     {
       text: 'Twitter Docs',
