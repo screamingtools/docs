@@ -9,7 +9,7 @@ After each batch has run, the command line will output the number of retrieved t
 Once the scrape is concluded, the command line will output
 `[🐸/twitter-scraper]: Search completed. [🐸/twitter-scraper]: Terminating.`
 
-:::error
+:::warning
 If console outputs `[🐸/tscrape]: Error 404 - No tweets found.` the [quota](https://sf-designdev-packages.github.io/twitter/usage/quotas-and-limitations.html) has likely been maxed out
 :::
 
