@@ -29,6 +29,8 @@ npm install --global @screaming/twitter-scraper
 
 ## Initiation
 
+**CLI Prompt:**
+
 ```sh
 twitter-scraper input_file.json
 ```

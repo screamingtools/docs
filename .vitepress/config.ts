@@ -141,7 +141,8 @@ function createTwitterSidebar() {
       collapsible: true,
       items: [
         { text: 'Quotas & Limitations', link: '/twitter/usage/quotas-and-limitations' },
-        { text: 'Input File Structure', link: '/twitter/usage/input-file-structure' }
+        { text: 'Input File Structure', link: '/twitter/usage/input-file-structure' },
+        { text: 'Outputs', link: '/twitter/usage/input-file-structure' }
       ]
     },
     {
