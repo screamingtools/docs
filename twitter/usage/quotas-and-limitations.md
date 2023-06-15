@@ -7,7 +7,13 @@ We have the following limits/quota to abide by:
 3. There's a quota per month (on the free tier),
    so we can only scrape **1,500 tweets per month**
 
-:::TIP
+:::tip
+This quota seems to be slow at updating, so you can try to push through scrapes as quickly as possible before it updates
+
+There's no consequence for exceeding the quota, but you will be blocked from further scraping when it is maxed out
+:::
+
+:::success
 This quota seems to be slow at updating, so you can try to push through scrapes as quickly as possible before it updates
 
 There's no consequence for exceeding the quota, but you will be blocked from further scraping when it is maxed out
