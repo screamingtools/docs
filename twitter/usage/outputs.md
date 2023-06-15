@@ -2,7 +2,7 @@
 
 ## Command Line Outputs
 
-scraping is run in `batches`.
+Scraping is run in `batches`.
 
 After each batch has run, the command line will output the number of retrieved tweets in that `batch` (max 110), then a tallied total in brackets.
 <br>
@@ -21,7 +21,8 @@ If console outputs `[🐸/tscrape]: Error 404 - No tweets found.` the [quota](ht
 ## File Outputs
 
 All the scraped tweets will be out put in a JSON file, named `tweets-[id].json`
-<br>E.g tweets-1686668275417.json
+<br>
+**E.g** `tweets-1686668275417.json`
 
 Each tweet object will contain:
 
