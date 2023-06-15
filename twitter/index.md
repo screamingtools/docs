@@ -30,5 +30,5 @@ npm install --global @screaming/twitter-scraper
 Scrape tweets:
 
 ```sh
-twitter-scrape input_file.json
+twitter-scraper input_file.json
 ```
