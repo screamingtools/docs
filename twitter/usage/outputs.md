@@ -1,6 +1,6 @@
-#outputs
+# Outputs
 
-## command line outputs
+## Command Line Outputs
 
 scraping is run in `batches`.
 
@@ -13,7 +13,7 @@ Once the scrape is concluded, the command line will output
 If console outputs `[🐸/tscrape]: Error 404 - No tweets found.` the [quota](https://sf-designdev-packages.github.io/twitter/usage/quotas-and-limitations.html) has likely been maxed out
 :::
 
-## file outputs
+## File Outputs
 
 All the scraped tweets will be out put in a JSON file, named `tweets-[id].json` E.g tweets-1686668275417.json
 
@@ -25,7 +25,8 @@ Each tweet object will contain:
 4. the content/text of the tweet
 
 **E.g**
-:::JS
+
+:::javascript
 {
 "created_at": "2023-06-13T14:54:16.000Z",
 "edit_history_tweet_ids": ["1668632887586062342"],
